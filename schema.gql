@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PlayerModel {
+  id: String!
+  first_name: String!
+  last_name: String!
+  current_number: String!
+  current_team: String!
+  position: String!
+  age: String!
+  photo: String!
+}
+
+type TeamModel {
+  id: String!
+  name: String!
+  code: String!
+  country: String!
+  national: Boolean!
+  player: [PlayerModel]!
+}
+
+type Query {
+  team(id: String!): TeamModel!
+  teams: [TeamModel!]!
+  deleteTeam(id: String!): TeamModel!
+  player(id: String!): PlayerModel!
+  inTeamPlayers(current_team: String!): [PlayerModel!]!
+  allPlayers: [PlayerModel!]!
+  deletePlayer(id: String!): PlayerModel!
+}
+
+type Mutation {
+  addTeam(name: String!, code: String!, country: String!, national: Boolean!): TeamModel!
+  updateTeam(id: String!, name: String!, code: String!, country: String!, national: Boolean!): TeamModel!
+  addPlayer(first_name: String!, last_name: String!, current_number: String!, current_team: String!, position: String!, age: String!, photo: String!): PlayerModel!
+  updatePlayer(id: String!, first_name: String!, last_name: String!, current_number: String!, current_team: String!, position: String!, age: String!, photo: String!): PlayerModel!
+}

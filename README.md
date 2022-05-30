@@ -12,7 +12,6 @@ Wszystkie potrzebne zmienne do setup'u bazy danych są w pliku .env, tam należy
 
 Wejdź w root projektu i wpisz
 ```bash
-$ npm install
 $ ./run.bat
 ```
 aby wystartować projekt na Dockerze
@@ -21,5 +20,6 @@ aby wystartować projekt na Dockerze
 
 Wejdź w root projektu i wpisz
 ```bash
+$ npm install
 $ ./run.test.bat
 ```

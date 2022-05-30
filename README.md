@@ -6,7 +6,7 @@ Nie zdecydowałem się na zrobienie pagination, pomimo tego, że to względnie p
 ## DB Setup
 
 Używana baza to postgresql
-Wszystkie potrzebne zmienne do setup'u bazy danych są w pliku .env, tam należy je podmienić
+Wszystkie potrzebne zmienne do połączenia z DB są w pliku .env, tam należy je podmienić
 
 ## Instalacja
 
